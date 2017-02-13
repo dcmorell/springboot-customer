@@ -26,7 +26,7 @@ public class CustomerController {
         return customers;
     }
 
-    @RequestMapping(value = "/customers/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/customers/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE), Manuie
     public Customer getCustomer(@PathVariable("id") Integer id) {
         Customer customer = customerService.getCustomerById(id);
         return customer;
